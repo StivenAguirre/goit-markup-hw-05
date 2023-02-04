@@ -567,13 +567,10 @@ body {
 
 .item-products:hover .overlay-products-hover {
   top: 0px;
-  background-color: var(--background-color-box-products-hover);
 }
 
 .overlay-products-hover {
   position: absolute;
-  width: 370px;
-  height: 294px;
   top: 300px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
