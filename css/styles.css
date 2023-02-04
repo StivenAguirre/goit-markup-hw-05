@@ -14,6 +14,7 @@ html {
   --background-color-icons-footer: rgba(255, 255, 255, 0.1);
   --color-icons: rgba(117, 117, 117, 1);
   --background-color-heroes-degrade: rgba(47, 48, 58, 0.4);
+  --background-color-box-products-hover: gba(33, 150, 243, 0.9);
 }
 
 *,
@@ -510,14 +511,91 @@ body {
   background-color: var(--background-color-header);
   border-radius: 4px;
   border: 1px solid var(--item-products-border);
+  background-repeat: no-repeat;
 }
 
 .item-products:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box-container-products-hover {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.item-products:nth-child(1) {
+  background-image: url(../images/computerthree.jpg);
+}
+
+.item-products:nth-child(2) {
+  background-image: url(../images/basketball.jpg);
+}
+
+.item-products:nth-child(3) {
+  background-image: url(../images/theseafood.jpg);
+}
+
+.item-products:nth-child(4) {
+  background-image: url(../images/headphones.jpg);
+}
+
+.item-products:nth-child(5) {
+  background-image: url(../images/thebox.jpg);
+}
+
+.item-products:nth-child(6) {
+  background-image: url(../images/computer.jpg);
+}
+
+.item-products:nth-child(7) {
+  background-image: url(../images/magazine.jpg);
+}
+
+.item-products:nth-child(8) {
+  background-image: url(../images/label.jpg);
+}
+
+.item-products:nth-child(9) {
+  background-image: url(../images/computertwo.jpg);
+}
+
+.item-products:hover .overlay-products-hover {
+  top: 0px;
+  background-color: var(--background-color-box-products-hover);
+}
+
+.overlay-products-hover {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  top: 300px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: white;
+  background: rgb(33, 150, 243);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 150, 243, 0.9) 0%,
+    rgba(33, 150, 243, 0.9) 100%
+  );
+}
+
+.box-container-information-products {
+  background-color: white;
+}
+
+.text-hover-card {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
 }
 
 .title-information {
@@ -566,6 +644,7 @@ footer {
   letter-spacing: 0.03em;
   text-decoration: none;
   cursor: pointer;
+
   margin-top: 60px;
 }
 
