@@ -135,10 +135,34 @@ body {
 
 .estudio {
   color: var(--color-pseudoclase);
+  position: relative;
+}
+
+.estudio::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: calc(100% + 26px);
+  width: 48px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
 }
 
 .portafolio {
   color: var(--color-pseudoclase);
+  position: relative;
+}
+
+.portafolio::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: calc(100% + 26px);
+  width: 78px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
 }
 
 .a-header-text {
@@ -180,6 +204,33 @@ body {
     url(../images/Imagen.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+#modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.vector-btn-close-modal {
+  padding: 9px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#btn-close-modal {
+  background-color: #ffffff;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border: none;
+  cursor: pointer;
 }
 
 .heroes-title {
